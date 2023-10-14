@@ -1,0 +1,114 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh; 
+    background: #010100;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.text-white{
+    color: white;
+}
+
+.green-text{
+    color: #1ed760;
+}
+
+.signup-btn{
+    background-color: #1ed760;
+    border: none;
+    color: white;
+}
+
+.login-btn{
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+.book-thumbnail{
+    width: 200px;
+    height: 300px;
+    object-fit: fill;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+   
+}
+
+.book-title{
+    text-align: center;
+}
+
+.book-container{
+    width: 200px;
+    display: inline-block;
+    margin-bottom: 20px;
+
+    position: relative;
+    text-align: center;
+}
+
+.gray-content{
+    background-color: #121313 ;
+}
+
+.mema{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.btn-view {
+    width: 150px;
+    height: 50px;
+    display: none; /* Initially hide the button */
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 130%);
+    z-index: 1;
+    
+}
+
+.book-container:hover {
+    opacity: 0.8; 
+}
+
+.book-container:hover .btn-view {
+    display: block; 
+}
+
+.green-btn{
+    background-color: #1ed760;
+    border: none;
+    color: white;
+}
+
+
+.addedBtn{
+    background-color: #121313;
+    color: #1ed760;
+    border: none;
+}
+
+.btn:hover,
+.btn-primary:hover {
+  background-color: white;
+  color:#1ed760 
+}
+
+.align-top{
+    vertical-align: top;
+}
