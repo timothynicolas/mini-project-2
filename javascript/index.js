@@ -16,3 +16,4 @@ function signUpSwitch(){
     signupBTN.classList.remove("disable");
     signinBTN.classList.add("disable");
 }
+
