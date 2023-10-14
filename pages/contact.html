@@ -73,6 +73,11 @@
         background-color: #121313;
     }
 
+    .green-btn:hover{
+      background-color: #1ed760;
+      color: white;
+      border: none;
+    }
     
     </style>
 </head>
@@ -131,21 +136,40 @@
 
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label text-white">Full Name:</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                    <input type="text" class="form-control" id="name">
                 </div>
 
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label text-white">Email Address:</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                    <input type="email" class="form-control" id="email">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlTextarea1" class="form-label text-white">Tell us about it:</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" id="concern" rows="3"></textarea>
                 </div>
-                <button class="btn signup-btn w-100 mt-1">Submit</button>
+                <button class="btn signup-btn w-100 mt-1 green-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="submitConcern()">Submit</button>
                 
             </div>
         </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+    <div class="modal-content">
+    <div class="modal-header">
+    <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: #010100;">Success!</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body" style="color:#010100;">
+    Your feedback has been sent. One of our representatives will reach out to you shortly via email. 
+    </div>
+    <div class="modal-footer">
+    
+    <button type="button" class="btn btn-primary signup-btn green-btn" data-bs-dismiss="modal">Okay</button>
+    </div>
+    </div>
+    </div>
     </div>
    
 
@@ -250,7 +274,7 @@
 
 
   <!-- JAVASCRIPT -->
-  <script src="../javascript/home.js">
+  <script src="../javascript/contact.js">
 
 
   </script>
