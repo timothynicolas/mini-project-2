@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- TITLE -->
+
+    <title>Website | Home</title>
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- ICONS -->
+
+    <script src="https://kit.fontawesome.com/0b0cb22309.js" crossorigin="anonymous"></script>
+
+    <!-- BOOTSTRAP -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="/css/home-updated.css">
+</head>
+<body>
+
+  <!-- NAVIGATION BAR NA MAY DIREKSYON SA BUHAY -->
+
+  <div class="container-fluid">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <img src="../media/favicon.png" width="40">
+        </a>
+      </div>
+
+      
+      
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="/index.html" class="nav-link px-2 green-text">Home</a></li>
+        <li><a href="/MP2/pages/about.html" class="nav-link px-2 text-white">About</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">Library</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">Cart</a></li>
+        <li><a href="/MP2/pages/contact.html" class="nav-link px-2 text-white">Contact Us</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+          <a class="btn btn-outline-light" href="/MP2/pages/login.html">Login</a>
+          <a class="btn btn-outline-light" href="/MP2/pages/login.html">Sign Up</a>
+      </div>
+      
+    </header>
+  </div>
+
+  <!-- HERO BANNER NA BIDA-BIDA -->
+
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-primary">
+    <div class="col-md-6 p-lg-5 mx-auto my-5">
+      <h1 class="display-3 fw-bold green-text">Knowledge doesn't have to be expensive.</h1>
+      <h3 class="fw-normal mb-3 text-white" id="quote">Random Quote from Custom API here</h3>
+      <!-- <div class="d-flex gap-3 justify-content-center lead fw-normal">
+        <a class="icon-link" href="#">
+          Learn more
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+        <a class="icon-link" href="#">
+          Buy
+          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
+        </a>
+      </div> -->
+    </div>
+    <div class="product-device shadow-sm d-none d-md-block"></div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+  </div>
+
+  <!--Services-->
+
+  <div class="container text-center">
+
+    <div class="services">
+      <h1>Our Services</h1>
+    </div>
+
+    <hr>
+    <br>
+    <br>
+
+    <div class="row align-items-start">
+      <div class="col">
+        <i class="fas fa-universal-access fa-3x" style="color: #1ed760;"></i>
+        <p>Accessible Learning</p>
+      </div>
+      <div class="col">
+        <i class="fas fa-truck fa-2x" style="color: #1efa60;"></i>
+        <p>Fast <br> Delivery</p>
+      </div>
+      <div class="col">
+        <i class="fas fa-search fa-2x" style="color: #1efa60;"></i>
+        <p>Discover new books</p>
+      </div>
+      <div class="col">
+        <i class="fas fa-file-export fa-2x" style="color: #1efa60;"></i>
+        <p>Upload <br> your files</p>
+      </div>
+      <div class="col">
+        <i class="fas fa-book fa-2x" style="color: #1efa60;"></i>
+        <p>Easy bookbinding</p>
+      </div>
+      <div class="col">
+        <i class="far fa-user-circle fa-2x" style="color: #1efa60;"></i>
+        <p>Personal information</p>
+      </div>
+      <div class="col">
+        <i class="fas fa-hand-pointer fa-2x" style="color: #1efa60;"></i>
+        <p>Wide variety of book genres</p>
+      </div>
+      <div class="col">
+        <i class="fas fa-percentage fa-2x" style="color: #1efa60;"></i>
+        <p>Discounted <br> Items</p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <!--Testimonials-->
+
+  <div class="container text-center">
+
+    <div class="services">
+
+      <hr>
+
+      <h1>Hear from our Clients</h1>
+
+      <br>
+      <br>
+    
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/media/testimonial01.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>April Garcia</h5>
+              <p>"I love it! The print quality and image are tops! I am on my 5th printing for my academic books."</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/media/testimonial03.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Sophia Cruz</h5>
+              <p>"The shipment was so fast. I got my books before the exams so I am very thankful. I also avail their bookbinding for our group thesis and our teachers commended us for the great quality. This is my new favorite book shop."</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/media/testimonial04.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Edward Holland</h5>
+              <p>"I have requested to have my work to get bookbind. It was my gift for my sister's birthday and it turned out so good. They even ask me where I get it. I also ordered some of her favorite books that I actually cannot find on the typical bookstore. Thanks!"</p>
+            </div>
+          </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+     </div>
+    
+  </div>
+
+  <!--Footer-->
+  <div class="container mt-5">
+    <footer class="pt-5">
+      <div class="row">
+
+        <div class="col-6 col-md-2 mb-2">
+          <div class="text-white">Help Center</div>
+          <br>
+
+          <ul class="nav flex-column">
+            <li class="nav-item" mb-2>
+              <a href="" class="nav-link text-white" p-0 text-white>FAQ</a>
+            </li>
+            <li class="nav-item" mb-2>
+              <a href="" class="nav-link text-white" p-0 text-white>Media Center</a>
+            </li>
+            <li class="nav-item" mb-2>
+              <a href="" class="nav-link text-white" p-0 text-white>Redeem Gift Cards</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-2">
+          <br>
+          <br>
+
+          <ul class="nav flex-column">
+            <li class="nav-item" mb-2>
+              <a href="" class="nav-link text-white" p-0 text-white>Terms of Use</a>
+            </li>
+            <li class="nav-item" mb-2>
+              <a href="" class="nav-link text-white" p-0 text-white>Privacy</a>
+            </li>
+            <li class="nav-item" mb-2>
+              <a href="" class="nav-link text-white" p-0 text-white>Cookie Preferences</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-2">
+          <br>
+          <br>
+
+          <ul class="nav flex-column">
+            <li class="nav-item" mb-2>
+              <a href="" class="nav-link text-white" p-0 text-white>Ways to Rent</a>
+            </li>
+            <li class="nav-item" mb-2>
+              <a href="" class="nav-link text-white" p-0 text-white>Only on Tenant</a>
+            </li>
+            <li class="nav-item" mb-2>
+              <a href="" class="nav-link text-white" p-0 text-white>Buy Gift Cards</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-2">
+          <br>
+          <br>
+
+          <ul class="nav flex-column">
+            <li class="nav-item" mb-2>
+              <a href="" class="nav-link text-white" p-0 text-white>Corporate Information</a>
+            </li>
+            <li class="nav-item" mb-2>
+              <a href="" class="nav-link text-white" p-0 text-white>Investor Relations</a>
+            </li>
+            <li class="nav-item" mb-2>
+              <a href="" class="nav-link text-white" p-0 text-white>Account</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2 mb-2">
+          <br>
+          <br>
+
+          <ul class="nav flex-column">
+            <li class="nav-item" mb-2>
+              <a href="" class="nav-link text-white" p-0 text-white>Get Help</a>
+            </li>
+            <li class="nav-item" mb-2>
+              <a href="" class="nav-link text-white" p-0 text-white>Bookbinding</a>
+            </li>
+            <li class="nav-item" mb-2>
+              <a href="" class="nav-link text-white" p-0 text-white>About Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+
+          <p class="text-white">© 2023 Website, Inc. All rights reserved.</p>
+
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#">
+                <i class="fab fa-facebook fa-2x" style="color: #1efa60;"></i>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#">
+                <i class="fab fa-instagram fa-2x" style="color: #1efa60;"></i>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#">
+                <i class="fab fa-twitter fa-2x" style="color: #1efa60;"></i>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </footer>
+  </div>
+
+  
+   
+
+
+  <!-- JAVASCRIPT -->
+  <script src="../javascript/home.js">
+
+
+  </script>
+</body>
+</html>
