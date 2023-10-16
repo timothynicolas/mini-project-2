@@ -18,6 +18,8 @@ fetch(url)
             <div class="book-container">
                 <img class="book-thumbnail" src="${item.image}">
                 <p id="p${item.id}" hidden>${item.id}</p>
+                <p id="pri${item.id}" hidden>${item.price}</p>
+                <p id="desc${item.id}" class="my-3" hidden>${item.bookdescription}</p>
                 <p id="prod${item.id}" class="book-title mt-2">${item.bookName}</p>
                 <button id="btn${item.id}" class="btn btn-primary btn-view green-btn" onclick="addToCart(${item.id})" data-bs-toggle="modal" data-bs-target=#m${item.id}>View Product</button>
             </div>
@@ -43,17 +45,17 @@ fetch(url)
                             <button id="btn${item.id}" class="btn btn-primary btn-view green-btn" onclick="addToCart(${item.id})" data-bs-toggle="modal" data-bs-target="#exampleModal">View Product</button>
                         </div>
 
-                        <div class="col-6">
-                            <p id="desc${item.id}"></p>
-                            <p class="text-black text-left">&#8369; ${item.price}</p>
+                        <div class="col-6 d-flex flex-column justify-content-between">
+                            <p id="desc${item.id}" class="my-3">${item.bookdescription}</p>
+                            <p class="text-black text-left h3">&#8369; ${item.price}</p>
                         </div>
                     </div>
 
                     
                 </div>
                 <div class="modal-footer">
-                    <p class="text-black text-left">&#8369; ${item.price}</p>
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Add to Cart</button>
+                    
+                    <button type="button" class="btn btn-primary  green-btn" data-bs-dismiss="modal" onclick="addToCart(${item.id})">Add to Cart</button>
                 </div>
                 </div>
             </div>
@@ -66,14 +68,27 @@ fetch(url)
 });
 
 function addToCart(id){
-    // let addBtn = document.getElementById(`btn${id}`);
 
-    // if(addBtn.innerHTML === 'Add to Cart'){
-    //     addBtn.innerHTML = 'Item Added'
-    //     addBtn.classList.add('addedBtn');
-        
-    // }else{
-    //     addBtn.innerHTML = 'Add to Cart';
-    //     addBtn.classList.remove('addedBtn');
-    // };
+    let array = localStorage.getItem("order");
+
+    if(array == null){
+        let orderlist = [];
+        let new_id = document.getElementById("p"+id).innerText;
+        let new_prod = document.getElementById("prod"+id).innerText;
+        let new_price = document.getElementById("pri"+id).innerText;
+        let new_desc =document.getElementById("desc"+id).innerText;
+        orderlist.push({id: new_id, product: new_prod, price: new_price, desc: new_desc});
+        localStorage.setItem("order", JSON.stringify(orderlist));
+
+    }else{
+        let orderlist = [];
+        let new_id = document.getElementById("p"+id).innerText;
+        let new_prod = document.getElementById("prod"+id).innerText;
+        let new_price = document.getElementById("pri"+id).innerText;
+        let new_desc =document.getElementById("desc"+id).innerText;
+        orderlist.push({id: new_id, product: new_prod, price: new_price, desc: new_desc});
+        localStorage.setItem("order", JSON.stringify(orderlist));
+    }
 }
+
+addToCart();
