@@ -17,11 +17,12 @@ fetch(url)
             show += `
             <div class="book-container">
                 <img class="book-thumbnail" src="${item.image}">
+                <p id="img${item.id}" hidden>${item.image}</p>
                 <p id="p${item.id}" hidden>${item.id}</p>
                 <p id="pri${item.id}" hidden>${item.price}</p>
                 <p id="desc${item.id}" class="my-3" hidden>${item.bookdescription}</p>
                 <p id="prod${item.id}" class="book-title mt-2">${item.bookName}</p>
-                <button id="btn${item.id}" class="btn btn-primary btn-view green-btn" onclick="addToCart(${item.id})" data-bs-toggle="modal" data-bs-target=#m${item.id}>View Product</button>
+                <button id="btn${item.id}" class="btn btn-primary btn-view green-btn" data-bs-toggle="modal" data-bs-target=#m${item.id}>View Product</button>
             </div>
         
             <!-- Modal -->
@@ -42,7 +43,7 @@ fetch(url)
 
                             <!-- <p id="prod${item.id}" class="book-title mt-2">${item.bookName}</p> -->
 
-                            <button id="btn${item.id}" class="btn btn-primary btn-view green-btn" onclick="addToCart(${item.id})" data-bs-toggle="modal" data-bs-target="#exampleModal">View Product</button>
+                            <button id="btn${item.id}" class="btn btn-primary btn-view green-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">View Product</button>
                         </div>
 
                         <div class="col-6 d-flex flex-column justify-content-between">
@@ -70,25 +71,32 @@ fetch(url)
 function addToCart(id){
 
     let array = localStorage.getItem("order");
+    console.log(array);
 
     if(array == null){
         let orderlist = [];
+
         let new_id = document.getElementById("p"+id).innerText;
         let new_prod = document.getElementById("prod"+id).innerText;
         let new_price = document.getElementById("pri"+id).innerText;
         let new_desc =document.getElementById("desc"+id).innerText;
-        orderlist.push({id: new_id, product: new_prod, price: new_price, desc: new_desc});
+        let new_img =document.getElementById("img"+id).innerText;
+
+
+        orderlist.push({id: new_id, product: new_prod, price: new_price, desc: new_desc, image: new_img});
         localStorage.setItem("order", JSON.stringify(orderlist));
 
     }else{
-        let orderlist = [];
+        let orderlist = JSON.parse(localStorage.getItem("order"));
+
         let new_id = document.getElementById("p"+id).innerText;
         let new_prod = document.getElementById("prod"+id).innerText;
         let new_price = document.getElementById("pri"+id).innerText;
         let new_desc =document.getElementById("desc"+id).innerText;
-        orderlist.push({id: new_id, product: new_prod, price: new_price, desc: new_desc});
+        let new_img =document.getElementById("img"+id).innerText;
+
+        orderlist.push({id: new_id, product: new_prod, price: new_price, desc: new_desc, image: new_img});
         localStorage.setItem("order", JSON.stringify(orderlist));
     }
 }
 
-addToCart();
