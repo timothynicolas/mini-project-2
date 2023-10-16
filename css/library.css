@@ -16,13 +16,26 @@ body{
     color: white;
 }
 
+
+
+
+/* TEXT COLORS */
+
 .text-white{
     color: white;
 }
 
+.text-black{
+    color: #010100;
+}
 .green-text{
     color: #1ed760;
 }
+
+
+
+
+
 
 .signup-btn{
     background-color: #1ed760;
@@ -77,13 +90,15 @@ body{
     bottom: 10px; /* Adjust as needed */
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 130%);
+    transform: translate(-50%, 100%);
     z-index: 1;
+    opacity: 1.0 !important;
     
 }
 
-.book-container:hover {
-    opacity: 0.8; 
+.book-thumbnail:hover {
+    opacity: 0.5; 
+    
 }
 
 .book-container:hover .btn-view {
@@ -105,10 +120,40 @@ body{
 
 .btn:hover,
 .btn-primary:hover {
-  background-color: white;
-  color:#1ed760 
+
+  background-color: #1ed760;
+  color:white; 
+}
+
+.btn:,
+.btn-primary {
+
+  background-color: #1ed760;
+  color:white; 
 }
 
 .align-top{
     vertical-align: top;
 }
+
+
+.price{
+    display: none; 
+    position: absolute;
+    bottom: 10px; /* Adjust as needed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    
+}
+
+.book-container:hover .price {
+    display: block; 
+    opacity: 1;
+}
+
+.book-container:hover .btn-view{
+    opacity: 1 !important; /* This will make the button and price fully visible on hover */
+}
+

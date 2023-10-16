@@ -173,7 +173,5 @@
     "price": "450",
     "image": "../media/books/6glasses.jpg"
 }
-
-
 ]
     
