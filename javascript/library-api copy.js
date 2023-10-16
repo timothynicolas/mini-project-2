@@ -13,7 +13,6 @@
     "price": "450",
     "image": "../media/books/48lawsofpower.jpg",
     "bookdescription": "Explore timeless strategies for gaining power and influence in various situations."
-    
 },
 
 {
@@ -22,16 +21,14 @@
     "price": "500",
     "image": "../media/books/howtowinfriends.jpg",
     "bookdescription": "Master the art of building relationships and influencing people positively."
-    
 },
 
 {
     "id": "4",
     "bookName": "Rich Dad, Poor Dad",
-    "price": "400",
+    "price": "450",
     "image": "../media/books/richdadpoordad.jpg",
     "bookdescription": "Discover valuable financial lessons from two contrasting perspectives."
-    
 },
 
 {
@@ -45,19 +42,17 @@
 {
     "id": "6",
     "bookName": "The Art of War",
-    "price": "500",
+    "price": "450",
     "image": "../media/books/artofwar.jpg",
     "bookdescription": "Explore ancient strategies for successful conflict resolution and leadership."
-    
 },
 
 {
     "id": "7",
     "bookName": "The Subtle Art of Not Giving  a F*ck",
-    "price": "400",
+    "price": "450",
     "image": "../media/books/subtleart.jpg",
     "bookdescription": "Discover a counterintuitive approach to living a good life."
-   
 },
 
 {
@@ -66,25 +61,22 @@
     "price": "450",
     "image": "../media/books/tokillamockingbird.webp",
     "bookdescription": "Witness the moral complexities of racial injustice in a southern town."
-   
 },
 
 {
     "id": "9",
     "bookName": "A Tale of Two Cities",
-    "price": "500",
+    "price": "450",
     "image": "../media/books/ataleoftwocities.jpg",
     "bookdescription": "Experience the turmoil of two cities during the French Revolution."
-   
 },
 
 {
     "id": "10",
     "bookName": "The Lord of the Rings",
-    "price": "400",
+    "price": "450",
     "image": "../media/books/lordoftherings.jpg",
     "bookdescription": "Embark on an epic journey through Middle-earth to destroy a powerful ring."
-    
 },
 
 {
@@ -98,7 +90,7 @@
 {
     "id": "12",
     "bookName": "The Elements of Style",
-    "price": "500",
+    "price": "450",
     "image": "../media/books/elements of style.jpg",
     "bookdescription": "Master the art of clear and concise writing with this classic guide."
 },
@@ -106,10 +98,9 @@
 {
     "id": "13",
     "bookName": "Principles of Neural Science",
-    "price": "400",
+    "price": "450",
     "image": "../media/books/principlesofneural.jpg",
     "bookdescription": "Dive into the complex world of neuroscience and the human nervous system."
-   
 },
 
 {
@@ -123,7 +114,7 @@
 {
     "id": "15",
     "bookName": "The Little Prince",
-    "price": "500",
+    "price": "450",
     "image": "../media/books/thelittleprince.jpg",
     "bookdescription": "Embark on a magical journey with a young prince from a distant asteroid."
 },
@@ -131,7 +122,7 @@
 {
     "id": "16",
     "bookName": "Sapiens",
-    "price": "400",
+    "price": "450",
     "image": "../media/books/sapiens.jpg",
     "bookdescription": "Uncover the history and impact of Homo sapiens on the world."
 },
@@ -141,21 +132,21 @@
     "bookName": "Thinking Fast and Slow",
     "price": "450",
     "image": "../media/books/thinkingfastandslow.jpg",
-    "bookdescription": "Explore the two systems of thought that drive our decisions by Daniel Kahneman."   
+    "bookdescription": "Explore the two systems of thought that drive our decisions by Daniel Kahneman."
 },
 
 {
     "id": "18",
     "bookName": "The Selfish Gene",
-    "price": "500",
-    "image": "../media/books/selfishgene.jpg"
-   
+    "price": "450",
+    "image": "../media/books/selfishgene.jpg",
+    "bookdescription": "Delve into the evolutionary theory of genes and natural selection by Richard Dawkins.",
 },
 
 {
     "id": "19",
     "bookName": "The Structure of Scientific Revolutions",
-    "price": "400",
+    "price": "450",
     "image": "../media/books/scientificrevolution.jpg",
     "bookdescription": "Examine the paradigm shifts in science and the development of scientific theories by Thomas Kuhn."
 },
@@ -171,7 +162,7 @@
 {
     "id": "21",
     "bookName": "The Art of Computer Programming",
-    "price": "500",
+    "price": "450",
     "image": "../media/books/computerprog.jpg",
     "bookdescription": "Dive into the world of algorithms and computer programming with Donald Knuth."
 },
@@ -179,7 +170,7 @@
 {
     "id": "22",
     "bookName": "Introduction to the Theory of Programming",
-    "price": "400",
+    "price": "450",
     "image": "../media/books/theorycomputation.jpg",
     "bookdescription": "Gain a foundational understanding of programming theory and concepts."
 },
@@ -195,7 +186,7 @@
 {
     "id": "24",
     "bookName": "The Wright Brothers",
-    "price": "500",
+    "price": "450",
     "image": "../media/books/wrightbrothers.jpg",
     "bookdescription": "Learn about the pioneering journey of aviation by David McCullough."
 },
@@ -203,7 +194,7 @@
 {
     "id": "25",
     "bookName": "A History of the World in 6 Glasses",
-    "price": "400",
+    "price": "450",
     "image": "../media/books/6glasses.jpg",
     "bookdescription": "Discover the role of six iconic beverages in shaping human history."
 }
