@@ -9,7 +9,8 @@ fetch(url)
     
 
    let randomQuote = result[randomNumber].quote;
+   let author = result[randomNumber].author;
 
-   document.getElementById("quote").innerHTML = randomQuote;
+   document.getElementById("quote").innerHTML = `"${randomQuote}"  - ${author}`;
 })
 
