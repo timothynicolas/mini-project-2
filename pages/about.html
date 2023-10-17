@@ -48,6 +48,9 @@
       color: white;
     }
 
+    .text-black{
+      color: #010100;
+    }
     .text-white{
       color: white;
     }
@@ -252,20 +255,26 @@
                   <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                     <label for="newsletter1" class="visually-hidden">Email address</label>
                     <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                    <button type="button" class="btn  signup-btn" data-bs-toggle="modal" data-bs-target="#newsletter" style="border: none;" id="myB4">
+                    <button type="button" class="btn btn-success signup-btn" data-bs-toggle="modal" data-bs-target="#newsletter" style="border: none;">
                       Subscribe
                     </button>
 
                     <div class="modal fade" id="newsletter" tabindex="-1" aria-labelledby="newsletter" aria-hidden="true">
-                      <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content text-center py-5">
-                          <i class="fa-regular fa-circle-check fa-4x" style="color: #1efa60;"></i>
-                          <h2 class="modal-title fs-5 text-dark" id="exampleModalLabel">You are now subscribed to our newsletter.</h2>
-                          <button type="button" class="btn modal-btn pt-4" aria-label="Close" id="closeBtn" data-bs-dismiss="modal">Close</button>
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Success!</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-black">
+                              You are now subscribed to our newsletter.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-success signup-btn" data-bs-dismiss="modal">Okay</button>
+                            </div>
+                          </div>
                         </div>
-                      </div>
                     </div>
-
                   </div>
                 </form>
               </div>
@@ -284,7 +293,6 @@
             </div>
           </footer>
         </div>
-  
    
 
 
