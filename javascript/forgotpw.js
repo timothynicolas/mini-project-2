@@ -2,12 +2,9 @@
 
 function resetPassword(){
 
-    let email = document.getElementById('inputEmail').value;
+    let email = document.getElementById('inputEmail');
 
-    if(email === ''){
-        alert('Please enter a valid email address.')
-        return;
-    }
+    email.value = '';
 }
 
 
