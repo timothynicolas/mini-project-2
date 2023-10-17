@@ -150,7 +150,7 @@
                     <label for="exampleFormControlTextarea1" class="form-label text-white">Tell us about it:</label>
                     <textarea class="form-control" id="concern" rows="3"></textarea>
                 </div>
-                <button class="btn signup-btn w-100 mt-1 green-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="submitConcern()">Submit</button>
+                <button class="btn btn-success signup-btn w-100 mt-1 green-btn" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="submitConcern()">Submit</button>
                 
             </div>
         </div>
@@ -169,7 +169,7 @@
     </div>
     <div class="modal-footer">
     
-    <button type="button" class="btn btn-primary signup-btn green-btn" data-bs-dismiss="modal">Okay</button>
+    <button type="button" class="btn btn-success signup-btn green-btn" data-bs-dismiss="modal">Okay</button>
     </div>
     </div>
     </div>
@@ -234,7 +234,10 @@
                   <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                     <label for="newsletter1" class="visually-hidden">Email address</label>
                     <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                    <button type="button" class="btn  signup-btn" data-bs-toggle="modal" data-bs-target="#newsletter" style="border: none;">
+                    <button type="button" class="btn btn-success signup-btn" data-bs-toggle="modal" data-bs-target="#newsletter" style="border: none;" onclick="
+                    let emailInput = document.getElementById('newsletter1');
+                    emailInput.value = ''
+                    ">
                       Subscribe
                     </button>
 
@@ -242,14 +245,14 @@
                         <div class="modal-dialog">
                           <div class="modal-content">
                             <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Success!</h1>
+                              <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Success!</h1>
                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
+                            <div class="modal-body text-black">
                               You are now subscribed to our newsletter.
                             </div>
                             <div class="modal-footer">
-                              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Okay</button>
+                              <button type="button" class="btn btn-success signup-btn" data-bs-dismiss="modal">Okay</button>
                             </div>
                           </div>
                         </div>

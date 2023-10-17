@@ -33,5 +33,32 @@
         "id": "6",
         "quote": "A room without books is like a body without a soul.",
         "author": "Marcus Tullius Cicero"
+    },
+
+    {
+        "id": "7",
+        "quote": "You can never get a cup of tea large enough or a book long enough to suit me.",
+        "author": "C.S. Lewis"
+    },
+
+    {
+        "id": "8",
+        "quote": "A book is a dream that you hold in your hand.",
+        "author": "Neil Gaiman"
+    },
+
+    {
+        "id": "9",
+        "quote": "A book is the only place in which you can examine a fragile thought without breaking it.",
+        "author": "Edward P. Morgan"
+    },
+
+    {
+        "id": "10",
+        "quote": "Reading is a discount ticket to everywhere.",
+        "author": "Mary Schimich"
     }
+
+    
+
 ]

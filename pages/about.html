@@ -48,6 +48,9 @@
       color: white;
     }
 
+    .text-black{
+      color: #010100;
+    }
     .text-white{
       color: white;
     }
@@ -131,7 +134,7 @@
 
   <!-- BODY -->
 
-  <div class="container mt-5">
+  <div class="container my-5">
     <div class="row">
         <div class="container col-6">
             <h1 class="green-text fw-bold text-center" style="font-size:300%;"> About Us</h1>
@@ -145,21 +148,21 @@
 
   
   <div class="container mt-5 ">
-    <div class="row d-flex justify-content">
+    <div class="row d-flex justify-content-between">
         <div class="container col-3  mx-4 about-owner">
             <center><img class="mt-5" src="../media/about-user.webp" style="width: 200px;"></center>
 
-            <p class="my-5 px-3 text-center">"I am Chrismae and I want to make sure that everyone, speceially the students, have acces to the books that they need because it can help them achieve their dreams without breaking a bank"</p>
+            <p class="my-5 px-3 text-center">"I am Chrismae and I want to make sure that everyone, especially the students, have access to the books that they need because it can help them achieve their dreams without breaking the bank"</p>
         </div>
         <div class="container col-3  mx-5 about-owner">
             <center><img class="mt-5" src="../media/about-user.webp" style="width: 200px;"></center>
 
-            <p class="my-5 px-3 text-center">"I am Chrismae and I want to make sure that everyone, speceially the students, have acces to the books that they need because it can help them achieve their dreams without breaking a bank"</p>
+            <p class="my-5 px-3 text-center">"Hi, I am Paul and I am a book enthusiast. I believe that knowledge and learning should be a right and not a privilege. That is why we came up with this website - for books to be an accessible commodity for everyone!"</p>
         </div>
         <div class="container col-3 mx-4 about-owner">
             <center><img class="mt-5" src="../media/about-user.webp" style="width: 200px;"></center>
 
-            <p class="my-5 px-3 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ad dolorum velit provident labore ipsum obcaecati veniam, possimus asperiores blanditiis, optio reprehenderit autem inventore recusandae soluta enim voluptatum laudantium veritatis!</p>
+            <p class="my-5 px-3 text-center">My name is Mark and I am a book worm. I spend my free time reading and writing books. My dream is to share to others the joy that I experience when reading books - making this website a reality and haven for readers alike.  </p>
         </div>
     </div>
 
@@ -167,32 +170,32 @@
     <br>
 
     <!--Mission-->
-    <div class="container text-center">
+    <div class="container text-center my-5">
       <div class="mission">
-        <h1 class="green-text fw-bold text-center" style="font-size:200%;">Mission</h1>
+        <p class="green-text fw-bold text-center h1" style="font-size:300%;">Mission</p>
       </div>
 
       <hr>
       <br>
 
-      <div class="text-center">
-        <p>To democratize knowledge by providing an accessible platform for users to purchase books at affordable prices, fostering a culture of learning and empowerment.</p>
+      <div class="text-center my-5">
+        <p class="h3">To democratize knowledge by providing an accessible platform for users to purchase books at affordable prices, fostering a culture of learning and empowerment.</p>
       </div>
     </div>
 
     <br>
 
     <!--Vision-->
-    <div class="container text-center">
+    <div class="container text-center my-5">
       <div class="mission">
-        <h1 class="green-text fw-bold text-center" style="font-size:200%;">Vision</h1>
+        <h1 class="green-text fw-bold text-center" style="font-size:300%;">Vision</h1>
       </div>
 
       <hr>
       <br>
 
-      <div class="text-center">
-        <p>We envision a future where individuals from all walks of life have equal access to a vast array of knowledge. Our platform not only offers cost-effective books but also empowers users to preserve and share their own knowledge through the conversion of digital content into tangible, cherished books.</p>
+      <div class="text-center my-5">
+        <p class="h3">We envision a future where individuals from all walks of life have equal access to a vast array of knowledge. Our platform not only offers cost-effective books but also empowers users to preserve and share their own knowledge through the conversion of digital content into tangible, cherished books.</p>
       </div>
     </div>
 
@@ -252,20 +255,29 @@
                   <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                     <label for="newsletter1" class="visually-hidden">Email address</label>
                     <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                    <button type="button" class="btn  signup-btn" data-bs-toggle="modal" data-bs-target="#newsletter" style="border: none;" id="myB4">
+                    <button type="button" class="btn btn-success signup-btn" data-bs-toggle="modal" data-bs-target="#newsletter" style="border: none;" onclick="
+                    let emailInput = document.getElementById('newsletter1');
+                    emailInput.value = ''
+                    ">
                       Subscribe
                     </button>
 
                     <div class="modal fade" id="newsletter" tabindex="-1" aria-labelledby="newsletter" aria-hidden="true">
-                      <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content text-center py-5">
-                          <i class="fa-regular fa-circle-check fa-4x" style="color: #1efa60;"></i>
-                          <h2 class="modal-title fs-5 text-dark" id="exampleModalLabel">You are now subscribed to our newsletter.</h2>
-                          <button type="button" class="btn modal-btn pt-4" aria-label="Close" id="closeBtn" data-bs-dismiss="modal">Close</button>
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Success!</h1>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-black">
+                              You are now subscribed to our newsletter.
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-success signup-btn" data-bs-dismiss="modal">Okay</button>
+                            </div>
+                          </div>
                         </div>
-                      </div>
                     </div>
-
                   </div>
                 </form>
               </div>
@@ -284,14 +296,10 @@
             </div>
           </footer>
         </div>
-  
    
 
 
   <!-- JAVASCRIPT -->
-  <script src="../javascript/home.js">
-
-
-  </script>
+  <script src="../javascript/home.js"></script>
 </body>
 </html>
