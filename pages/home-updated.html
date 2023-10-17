@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700;900&display=swap" rel="stylesheet">
 
+    <!-- FAVICON -->
+
+    <link rel="icon" href="../media/favicon5.png">
+
     <!-- ICONS -->
 
     <script src="https://kit.fontawesome.com/0b0cb22309.js" crossorigin="anonymous"></script>
@@ -30,31 +34,48 @@
 
   <!-- NAVIGATION BAR NA MAY DIREKSYON SA BUHAY -->
 
-  <div class="container-fluid">
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
-      <div class="col-md-3 mb-2 mb-md-0">
-        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <img src="../media/favicon.png" width="40">
-        </a>
-      </div>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="../media/favicon5.png" alt="medlogo" style="height: 50px; width: 50px">
+      </a>
 
-      
-      
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="/index.html" class="nav-link px-2 green-text">Home</a></li>
-        <li><a href="about.html" class="nav-link px-2 text-white">About</a></li>
-        <li><a href="library.html" class="nav-link px-2 text-white">Library</a></li>
-        <li><a href="cart.html" class="nav-link px-2 text-white">Cart</a></li>
-        <li><a href="contact.html" class="nav-link px-2 text-white">Contact Us</a></li>
-      </ul>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <div class="col-md-3 text-end">
-          <a class="btn btn-outline-light" href="/MP2/pages/login.html">Login</a>
-          <a class="btn btn-outline-light" href="/MP2/pages/login.html">Sign Up</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link green-text" href="home-updated.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="library.html">Library</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white " href="cart.html">Cart</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Profile
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Log Out</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html">Contact Us</a>
+          </li>
+
+          
+        </ul>
       </div>
-      
-    </header>
-  </div>
+    </div>
+  </nav>
 
   <!-- HERO BANNER NA BIDA-BIDA -->
 
