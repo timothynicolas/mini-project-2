@@ -73,6 +73,10 @@
         background-color: #121313;
     }
 
+    .fa-regular{
+      margin-bottom: 25px;
+    }
+
     
     </style>
 </head>
@@ -83,7 +87,7 @@
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
-        <img src="/media/logo.ico" alt="medlogo" style="height: 50px; width: 50px">
+        <img src="/media/logo (2).ico" alt="medlogo" style="height: 80px; width: 80px">
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -154,31 +158,38 @@
         </div>
     </div>
 
-    <div class="row my-5">
-      <div class="container col-6">
-          <h1 class="green-text fw-bold text-center" style="font-size:300%;"> Mission</h1>
+    <br>
+    <br>
+
+    <!--Mission-->
+    <div class="container text-center">
+      <div class="mission">
+        <h1 class="green-text fw-bold text-center" style="font-size:200%;">Mission</h1>
       </div>
 
-      <div class="container col-6 mb-5">
-          <p class=" h4 text-center">To democratize knowledge by providing an accessible platform for users to purchase books at affordable prices, fostering a culture of learning and empowerment.</p>
-      </div>
-  </div>
+      <hr>
+      <br>
 
-  <div class="row my-5">
-    <div class="container col-6 mb-5">
-      <p class=" h4 text-start">We envision a future where individuals from all walks of life have equal access to a vast array of knowledge. Our platform not only offers cost-effective books but also empowers users to preserve and share their own knowledge through the conversion of digital content into tangible, cherished books</p>
+      <div class="text-center">
+        <p>To democratize knowledge by providing an accessible platform for users to purchase books at affordable prices, fostering a culture of learning and empowerment.</p>
+      </div>
     </div>
 
-    <div class="container col-6">
-      <h1 class="green-text fw-bold text-center" style="font-size:300%;"> Vision</h1>
-  </div>
-    
-  </div>
-    
-  </div>
-   
+    <br>
 
-  
+    <!--Vision-->
+    <div class="container text-center">
+      <div class="mission">
+        <h1 class="green-text fw-bold text-center" style="font-size:200%;">Vision</h1>
+      </div>
+
+      <hr>
+      <br>
+
+      <div class="text-center">
+        <p>We envision a future where individuals from all walks of life have equal access to a vast array of knowledge. Our platform not only offers cost-effective books but also empowers users to preserve and share their own knowledge through the conversion of digital content into tangible, cherished books.</p>
+      </div>
+    </div>
 
     <br>
     <br>
@@ -236,26 +247,20 @@
                   <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                     <label for="newsletter1" class="visually-hidden">Email address</label>
                     <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                    <button type="button" class="btn  signup-btn" data-bs-toggle="modal" data-bs-target="#newsletter" style="border: none;">
+                    <button type="button" class="btn  signup-btn" data-bs-toggle="modal" data-bs-target="#newsletter" style="border: none;" id="myB4">
                       Subscribe
                     </button>
 
                     <div class="modal fade" id="newsletter" tabindex="-1" aria-labelledby="newsletter" aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h1 class="modal-title fs-5" id="exampleModalLabel">Success!</h1>
-                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                              You are now subscribed to our newsletter.V2
-                            </div>
-                            <div class="modal-footer">
-                              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Okay</button>
-                            </div>
-                          </div>
+                      <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content text-center py-5">
+                          <i class="fa-regular fa-circle-check fa-4x" style="color: #1efa60;"></i>
+                          <h2 class="modal-title fs-5 text-dark" id="exampleModalLabel">You are now subscribed to our newsletter.</h2>
+                          <button type="button" class="btn modal-btn pt-4" aria-label="Close" id="closeBtn" data-bs-dismiss="modal">Close</button>
                         </div>
+                      </div>
                     </div>
+
                   </div>
                 </form>
               </div>
