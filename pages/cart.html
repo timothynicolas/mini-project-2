@@ -87,7 +87,7 @@
 
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="home-updated.html">
         <img src="../media/favicon5.png" alt="medlogo" style="height: 50px; width: 50px">
       </a>
 
@@ -109,18 +109,36 @@
           <li class="nav-item">
             <a class="nav-link green-text " href="cart.html">Cart</a>
           </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Profile
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Log Out</a></li>
-            </ul>
-          </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="contact.html">Contact Us</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#exampleModals" href="../index.html">Log Out</a>
+          </li>
+
+         
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModals" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Attention!</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-black">
+                  Are you sure you want to log out?
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                  <a href="../index.html"><button type="button" class="btn btn-success signup-btn" data-bs-dismiss="modal" onclick="
+                    localStorage.clear();
+                    sessionStorage.clear();
+                    ">Log Out</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
 
           
         </ul>
