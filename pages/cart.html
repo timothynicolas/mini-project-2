@@ -73,6 +73,11 @@
         background-color: #121313;
     }
 
+    .gray-box{
+      background-color: #121313;
+      border-radius: 20px;
+    }
+
     
     </style>
 </head>
@@ -129,11 +134,17 @@
 
     <div class="row">
 
-      <div class="col-7" id="cart-items">
+      <div class="col-7 d-flex align-items-center justify-content-center flex-wrap" id="cart-items">
 
-        <p class="text-center h4">There are no items in your cart yet</p>
+        <i class="fa-solid fa-cart-shopping fa-bounce fa-8x" style="color: #ffffff;"></i>
+        
+        <br>
+
+        <p class="text-center h4 px-5">No items in your cart yet. Browse our Library to pick from our vast variety of books.</p>
 
       </div>
+
+      
 
       <div class="col-5">
         <p class="h1 fw-bold text-center mb-5">Your Cart</p>
@@ -141,13 +152,13 @@
         <div class="row">
           <div class="col-6" id="cart-entries">
 
-            
+            <!-- CART ENTRIES HERE -->
 
           </div>
 
           <div class="col-6" id="cart-prices">
 
-            
+            <!-- CART PRICES HERE -->
 
           </div>
         </div>
@@ -159,7 +170,6 @@
 
             <p> Items(0):</p>
             
-
           </div>
 
           <div class="col-6" id="sub-total">
@@ -179,7 +189,6 @@
 
           <div class="col-6" id="tax_div">
 
-            
             <p class="text-end"> ₱ 0 </p>
 
           </div>
@@ -191,16 +200,37 @@
 
             <p> Grand Total:</p>
            
-
           </div>
 
           <div class="col-6" id="grandtotal_div">
 
             <p class="text-end" id="final-total"> ₱ 0 </p>
             
-
           </div>
-        </div>        
+        </div>  
+        
+        <a href="#" class="btn btn-success signup-btn w-100 my-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Checkout </a>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Success!</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-black">
+
+                Thank you for choosing Pickabook! We hope to see you again!
+
+              </div>
+              <div class="modal-footer">
+                
+                <button type="button" class="btn btn-success signup-btn" data-bs-dismiss="modal" onclick="clearCart()">Back to Home</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div> 
       

@@ -96,6 +96,11 @@ let grandtotalComputation = Number(subTotal + taxComputation);
 
 grandtotal_div.innerHTML  = `<p class="text-end" id="final-total"> ₱ ${grandtotalComputation} </p>`;
 
+function clearCart(){
+  localStorage.clear();
+  location.href = "home-updated.html";
+}
+
 
 
 
