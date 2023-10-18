@@ -24,7 +24,7 @@ fetch(url)
                 <p id="pri${item.id}" hidden>${item.price}</p>
                 <p id="desc${item.id}" class="my-3" hidden>${item.bookdescription}</p>
                 <p id="prod${item.id}" class="book-title mt-2">${item.bookName}</p>
-                <button id="btn${item.id}" class="btn btn-primary btn-view green-btn" data-bs-toggle="modal" data-bs-target=#m${item.id}>View Product</button>
+                <button id="btn${item.id}" class="btn btn-success btn-view green-btn" data-bs-toggle="modal" data-bs-target=#m${item.id}>View Product</button>
             </div>
         
             <!-- Modal -->
@@ -58,7 +58,7 @@ fetch(url)
                 </div>
                 <div class="modal-footer">
                     
-                    <button type="button" class="btn btn-primary  green-btn" data-bs-dismiss="modal" onclick="addToCart(${item.id})">Add to Cart</button>
+                    <button type="button" class="btn btn-success  green-btn" data-bs-dismiss="modal" onclick="addToCart(${item.id})">Add to Cart</button>
                 </div>
                 </div>
             </div>
