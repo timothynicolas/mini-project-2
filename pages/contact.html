@@ -115,13 +115,13 @@
             <a class="nav-link green-text" href="contact.html">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#exampleModal" href="../index.html">Log Out</a>
+            <a class="nav-link text-white" data-bs-toggle="modal" data-bs-target="#exampleModals" href="../index.html">Log Out</a>
           </li>
 
          
 
           <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="exampleModals" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
@@ -133,8 +133,9 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                  <a href="../index.html"><button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="
-                    localStorage.clear()
+                  <a href="../index.html"><button type="button" class="btn btn-success signup-btn" data-bs-dismiss="modal" onclick="
+                    localStorage.clear();
+                    sessionStorage.clear();
                     ">Log Out</button></a>
                 </div>
               </div>
