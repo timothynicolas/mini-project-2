@@ -17,7 +17,7 @@ fetch(url)
     a.forEach(
         function(item){
             show += `
-            <div class="book-container">
+            <div class="book-container d-flex flex-column">
                 <img class="book-thumbnail" src="${item.image}">
                 <p id="img${item.id}" hidden>${item.image}</p>
                 <p id="p${item.id}" hidden>${item.id}</p>
