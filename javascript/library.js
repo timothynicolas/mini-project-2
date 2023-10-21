@@ -1,4 +1,4 @@
-const url = 'http://127.0.0.1:5501/javascript/library-api.js';
+const url = 'https://timothynicolas.github.io/mini-project-2/javascript/library-api.js';
 
 
 
