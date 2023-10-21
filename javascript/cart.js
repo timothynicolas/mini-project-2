@@ -9,7 +9,8 @@ let prod = "";
 array.forEach(
   function(item){
     prod +=`
-    <div class="card mb-3" style="max-width: 540px;">
+    <center>
+    <div class="card mb-3 d-flex justify-content-center" style="max-width: 540px;">
       <div class="row g-0">
         <div class="col-md-4">
             <img src="${item.image}" class="img-fluid rounded-start" alt="...">
@@ -23,6 +24,7 @@ array.forEach(
         </div>
       </div>
     </div>
+    </center>
     
     `;
 });
